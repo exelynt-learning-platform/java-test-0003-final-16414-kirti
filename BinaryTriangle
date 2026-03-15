@@ -1,11 +1,13 @@
 public class BinaryTriangle {
+
+    private static final int ROWS = 6; 
+
     public static void main(String[] args) {
 
-        int n = 6;  
-
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i <= ROWS; i++) {
 
             int num;
+
 
             if (i % 2 == 0) {
                 num = 0;
@@ -16,6 +18,7 @@ public class BinaryTriangle {
             for (int j = 1; j <= i; j++) {
                 System.out.print(num + " ");
 
+            
                 if (num == 0) {
                     num = 1;
                 } else {
